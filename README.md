@@ -2,7 +2,7 @@
 
 You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
-The main version is hosted at [https://dazzling-thunder.glitch.me/](https://dazzling-thunder.glitch.me/)
+The main version is hosted at [https://necessary-notebook.glitch.me](https://necessary-notebook.glitch.me)
 
 ## Usage
 ### Create a counter
@@ -23,4 +23,4 @@ Make a `GET` request on the route `/delete/counterName` to remove the counter, t
 
 ## Remix
 This project is made on [Glitch](https://glitch.com) using [PouchDB](https://pouchdb.com/)  
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/https://dazzling-thunder.glitch.me/)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/https://necessary-notebook.glitch.me)
