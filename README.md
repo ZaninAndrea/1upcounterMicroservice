@@ -1,4 +1,5 @@
-# 1Up Counter
+#  ![logo](https://github.com/ZaninAndrea/1upcounterMicroservice/blob/master/1UP.jpg) Counter
+
 You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
 The main version is hosted at [https://dazzling-thunder.glitch.me/](https://dazzling-thunder.glitch.me/)
