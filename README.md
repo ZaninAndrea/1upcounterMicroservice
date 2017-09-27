@@ -1,4 +1,4 @@
-#  ![logo](https://github.com/ZaninAndrea/1upcounterMicroservice/blob/master/1UP.jpg) Counter
+#  ![logo](1UP.jpg) Counter
 
 You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
