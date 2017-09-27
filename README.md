@@ -21,5 +21,5 @@ Make a `GET` request on the route `/total/counterName` to read the counter, if t
 Make a `GET` request on the route `/delete/counterName` to remove the counter, this route is always protected, so you have to pass the secret too like this `/remove/counterName?secret=yoursecret`
 
 ## Remix
-This project is made on [Glitch](https://glitch.com) using [PouchDB](https://pouchdb.com/)
+This project is made on [Glitch](https://glitch.com) using [PouchDB](https://pouchdb.com/)  
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/https://dazzling-thunder.glitch.me/)
