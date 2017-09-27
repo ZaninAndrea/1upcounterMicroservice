@@ -1,7 +1,7 @@
-# Counter microservice
+# 1Up Counter
 You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
-You can use the microservice at the url [https://dazzling-thunder.glitch.me/](https://dazzling-thunder.glitch.me/)
+The main version is hosted at [https://dazzling-thunder.glitch.me/](https://dazzling-thunder.glitch.me/)
 
 ## Usage
 ### Create a counter
@@ -12,7 +12,7 @@ Optional parameters:
 - `hidden`: if eneabled the route `/total/counterName` will be protected
 
 ### Up a counter
-Make a `GET` request on the route `/up/counterName` to up the counter, if the counter is protected you need to pass the secret in the query like this `/up/counterName?secret=yoursecret`
+Make a `GET` request on the route `/up/counterName` to 1Up the counter, if the counter is protected you need to pass the secret in the query like this `/up/counterName?secret=yoursecret`
 
 ### Read a counter
 Make a `GET` request on the route `/total/counterName` to read the counter, if the counter is hidden you will have to pass the secret like this `/total/counterName?secret=yoursecret`
