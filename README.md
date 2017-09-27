@@ -1,30 +1,25 @@
-# [PouchDB Express Server](https://pouchdb.com/)
+# Counter microservice
+You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
-**_Zero to PouchDB Express Server in less than a minute._** 
+You can use the microservice at the url [https://dazzling-thunder.glitch.me/](https://dazzling-thunder.glitch.me/)
 
-PouchDB is a NoSQL Database written in JavaScript. With glitch, _you can run pouchdb as an HTTP server_ by simply remixing this project. While not meant for production, running pouchdb server is perfect for small hobby projects or proof of concepts. For more info on technical restrictions - [https://glitch.com/faq#restrictions](https://glitch.com/faq#restrictions)
+## Usage
+### Create a counter
+Make a `GET` request on the route `/new/counterName` to create a new counter, you will be returned the secret for that counter.
+Optional parameters:
+- `secret`: to set a custom secret
+- `protected`: if enabled the route `/up/counterName` will be protected, so you will have to put the secret in the query to up the counter
+- `hidden`: if eneabled the route `/total/counterName` will be protected
 
-## Getting Started
+### Up a counter
+Make a `GET` request on the route `/up/counterName` to up the counter, if the counter is protected you need to pass the secret in the query like this `/up/counterName?secret=yoursecret`
 
-1. Click **Remix this**
-0. Click **Show** to display your new API url
-0. Append `/_utils` to your API url to display your database server
-0. Click on **Admin Party**
-0. Add an administrator to secure your database
+### Read a counter
+Make a `GET` request on the route `/total/counterName` to read the counter, if the counter is hidden you will have to pass the secret like this `/total/counterName?secret=yoursecret`
 
-![screenshot](https://cdn.glitch.com/373e5a0b-7ef8-4b1d-a69e-2c7f5e12533d%2FScreen%20Shot%202017-08-08%20at%206.57.14%20AM.png?1502189884525)
+### Delete a counter
+Make a `GET` request on the route `/delete/counterName` to remove the counter, this route is always protected, so you have to pass the secret too like this `/remove/counterName?secret=yoursecret`
 
-## Learn More
-
-- **server.js** defines an ExpressJS web server and a PoucbDB database server.
-- The database is stored in the **.data** folder.
-- Read the docs at [PouchDB.com](https://pouchdb.com/)
-
-## Thanks
-
-* PouchDB Team and Community [https://github.com/pouchdb](https://github.com/pouchdb)
-* CouchDB Team and Community [http://couchdb.apache.org/](http://couchdb.apache.org/)
-* [NodeJS](https://nodejs.org/en/)/[Express](https://expressjs.com/) community 
-* [Glitch](https://glitch.com/) Team for this platform to share and learn
-
-**This project was created with <3 from [JRS Coding School](http://jrscode.com)**
+## Remix
+This project is made on [Glitch](https://glitch.com) using [PouchDB](https://pouchdb.com/)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/https://dazzling-thunder.glitch.me/)
