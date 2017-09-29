@@ -2,7 +2,7 @@
 
 You can use this microservice to count anything (website visits, package usage, cookies eaten, ...)
 
-The main version is hosted at [https://necessary-notebook.glitch.me](https://necessary-notebook.glitch.me)
+The main version is hosted at [https://count1up.herokuapp.com](https://count1up.herokuapp.com)
 
 ## Usage
 ### Create a counter
